@@ -1,0 +1,35 @@
+.test {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.test-div {
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+
+	margin: 1rem;
+}
+
+.one {
+	background-color: var(--color-primary);
+}
+.two {
+	background-color: var(--color-secondary);
+}
+.three {
+	background-color: var(--color-gray-1);
+}
+.four {
+	background-color: var(--color-gray-2);
+}
+.five {
+	background-color: var(--color-gray-3);
+}
+.six {
+	background-color: var(--color-gray-dark);
+}
+.seven {
+	background-color: var(--color-white);
+}
