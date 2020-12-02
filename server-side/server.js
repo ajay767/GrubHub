@@ -1,12 +1,27 @@
-/* eslint-disable no-console */
-const express = require('express');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
-const app = express();
+const app = require('./app');
 
-app.get('/', (req, res) => {
-  res.send('hello');
-});
+dotenv.config({ path: './config.env' });
 
-app.listen(4000, (req, res) => {
-  console.log('server is up and running on port 4000');
+const DB = process.env.DATABASE_URL.replace(
+  '<PASSWORD>',
+  process.env.DATABASE_PASSWORD
+);
+
+mongoose
+  .connect(DB, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true
+  })
+  .then(() => {
+    console.log('Database connected successfully!!');
+  })
+  .catch(() => console.log('Some error occured while connecting to DB!!'));
+
+app.listen(process.env.PORT, (req, res) => {
+  console.log(`server is up and running on port ${process.env.PORT}...`);
 });
