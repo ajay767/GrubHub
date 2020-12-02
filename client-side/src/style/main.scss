@@ -3,7 +3,8 @@
 @import "./base/test";
 @import "./base/typography";
 
-@import "./components/footer";
-@import "./components/header";
+@import "./components/components";
 
 @import "./layout/layout";
+@import "./layout/header";
+@import "./layout/search";
