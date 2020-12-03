@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import Footer from "./../Layout/Footer/Footer";
 import icon from "./../../assests/icons.svg";
 
 const setIcon = (iconName) => {
@@ -52,6 +54,7 @@ function Search() {
 					<p className="search__result__info">Madhya Pradesh, Satna, India</p>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 }
