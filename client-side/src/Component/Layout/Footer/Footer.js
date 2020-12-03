@@ -24,13 +24,13 @@ function Footer() {
 				</span>
 			</Link>
 
-			<Link>
+			<Link to="/">
 				<span className="footer__item">
 					{setIcon("shopping-bag")} <p>Orders</p>
 				</span>
 			</Link>
 
-			<Link>
+			<Link to="/">
 				<span className="footer__item">
 					{setIcon("profile-user")}
 					<p>Profile</p>
