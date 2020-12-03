@@ -1,0 +1,110 @@
+.restaurant__menu{
+    width: 100%;
+    padding: 0 4px;
+    // padding-left: 9px;
+    background-color: rgb(248, 248, 248);
+
+    &__Back__Trend{
+        display: flex;
+        flex-direction: column;
+
+
+        a{
+            text-decoration: none;
+            font-size: 1.35rem;
+            color: var(--color-primary);
+            font-weight: 700;
+            font-family: "Nunito", sans-serif;
+            margin: 10px 0;
+        }   
+        
+        &--Trend{
+            font-size: 1.9rem;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        hr{
+            margin-left: 6px;
+        }
+
+    }
+
+    .Food__Container{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    
+    &__Food__Card{
+        box-shadow:  2px 2.3px 2px #ccc, 
+                     -1px -1px 2px #ccc;
+        margin: 10px;
+        margin-left: 12px;
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+
+        &--image{
+            height: 8rem;
+            width: 100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        &--description{
+            margin: 8px 0;
+            
+            h3{
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+            }
+
+            p{
+                color: var(--color-gray-1);
+                font-size: 13px;
+                font-weight: 700;
+            }
+            
+        }
+
+        &--rating-pricing{
+            display: flex;
+            justify-content: space-between;
+            span svg{
+                height: 1rem;
+                width: 1rem;
+                fill: var(--color-secondary);
+                margin-left: 1.5px;
+            }
+            &-pricing{
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                padding-right: 5px;
+                transform: translateY(-2px);
+            }
+        }
+
+
+    }
+}
+
+
+
+// :root{
+
+//     --color-primary: #f52d56;
+//     --color-secondary: #ff9500;
+    
+//     --color-gray-text: #5c5b5b; //dim text color
+//     --color-gray-1: #9b9b9b;
+//     --color-gray-2: #c1c0c9;
+//     --color-gray-3: #dad9e2;
+//     --color-white: #e4e3e3; //bg color
+//     --color-pure-white: rgb(255, 255, 255); //component bg color
+    
+//     --color-gray-dark: #262628; 
+// }
