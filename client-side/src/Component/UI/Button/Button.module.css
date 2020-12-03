@@ -1,0 +1,22 @@
+.Button{
+    background-color: rgb(252, 26, 26);
+    width: 4rem;
+    height: 2.3rem;
+    font: inherit;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
