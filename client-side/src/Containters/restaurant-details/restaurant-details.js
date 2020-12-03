@@ -36,7 +36,7 @@ const restaurantDatails = (props) => {
                 {setIcon("star")}
                 {setIcon("star")}
                 {setIcon("star")}
-                {setIcon("star")}
+                {setIcon("star")} 
                 <span className="restaurant-review-total">(145 reviews)</span>
             </span>
             <span className="restaurant-del-open">
