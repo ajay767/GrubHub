@@ -1,0 +1,136 @@
+.Restaurant__Checkout{
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+
+    &__Order__Wrapper{
+        background-color: var(--color-primary);
+        width: 130%;
+        height: 60vh;
+        border-radius: 70%;
+        transform: translate(-58px,-145px);
+       
+    }
+
+    &__Order__Heading__Close
+    {
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        padding: 0 17px;
+
+
+        &--Heading{
+        font-family: "Roboto", sans-serif;
+        font-size: 2.35rem;
+        letter-spacing: 1px;
+        }
+
+
+        &--Close{
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+    }
+
+    &__Price__Wrapper{
+        width: 90%;
+        background-color: #fff;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 11px;
+        line-height: 25px;
+        position: relative;
+        transform: translateY(-228px);
+        border-radius: 10px;
+        box-shadow:  1px 2px 1px rgb(206, 193, 193), 
+             -1px -1px 2px rgb(195, 184, 184);
+        
+
+        hr{
+            width: 100%;
+            position: absolute;
+            top: 63%;
+            left: 0;
+            opacity: 0.6;
+
+        }
+        h2{
+            margin-top: 25px;
+            font-size: 23px;
+            font-weight: 800;
+        }
+        &__Content{
+            // Bhai Mai iss Content Ko Hatha k Bhi Kar Sakta tha But for the sake of better understood I have used the empty one 
+
+            &--Heading{
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+            }
+
+        }
+        &__Price{
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            
+
+            // Bhai Mai iss Content Ko Hatha k Bhi Kar Sakta tha But for the sake of better understood I have used the empty one 
+            
+            &--price{
+                padding-left: auto;
+                font-size: 13px;
+                font-weight: 700;
+                color: var( --color-gray-1);
+                // float: right;
+            }
+
+        }
+
+    }
+    &__Food__Summary{
+        border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &--wrapper{
+            display: flex;
+            img{
+                width: 20%;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+
+
+
+// font-family: "Nunito", sans-serif;
+
+
+
+:root{
+
+    --color-primary: #f52d56;
+    --color-secondary: #ff9500;
+    
+    --color-gray-text: #5c5b5b; //dim text color
+    --color-gray-1: #9b9b9b;
+    --color-gray-2: #c1c0c9;
+    --color-gray-3: #dad9e2;
+    --color-white: #e4e3e3; //bg color
+    --color-pure-white: rgb(255, 255, 255); //component bg color
+    
+    --color-gray-dark: #262628; 
+}
