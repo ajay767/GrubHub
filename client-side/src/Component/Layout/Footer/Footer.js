@@ -30,7 +30,7 @@ function Footer() {
 				</span>
 			</Link>
 
-			<Link to="/">
+			<Link to="/search/restaurant/82.323/24.5747">
 				<span className="footer__item">
 					{setIcon("profile-user")}
 					<p>Profile</p>

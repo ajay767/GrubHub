@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import SearchBar from "./../../Containers/Seachbar_container";
 
 import Footer from "./../Layout/Footer/Footer";
 import icon from "./../../assests/icons.svg";
@@ -13,19 +13,7 @@ function Search() {
 	console.log("check");
 	return (
 		<>
-			<div className="searchbar__container">
-				<Link to="/">
-					<span className="go-back">{setIcon("left-arrow")}</span>
-				</Link>
-				<form>
-					<input
-						autoFocus={true}
-						type="text"
-						placeholder="Enter place or street name"
-					/>
-				</form>
-				<span className="search-submit">{setIcon("loupe")}</span>
-			</div>
+			<SearchBar />
 			<div className="result__wrapper">
 				<div className="search__result__container">
 					<span className="search__result__icon">{setIcon("gps")}</span>

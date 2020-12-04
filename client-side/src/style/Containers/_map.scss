@@ -2,3 +2,21 @@
 	height: 80vh;
 	width: 100%;
 }
+.userMarker {
+	height: 2rem;
+	width: 2rem;
+	background-color: var(--color-secondary);
+	border: 2px solid var(--color-pure-white);
+	border-radius: 50%;
+	margin: 5rem;
+	box-shadow: 0px 0px 15px 3px var(--color-secondary);
+}
+.marker {
+	height: 1.3rem;
+	width: 1.3rem;
+	background-color: var(--color-primary);
+	border: 2px solid var(--color-pure-white);
+	border-radius: 50%;
+	margin: 5rem;
+	box-shadow: 0px 0px 15px 1px red;
+}
