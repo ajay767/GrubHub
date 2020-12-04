@@ -1,24 +1,26 @@
 import React from "react";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
-import ReviewCard from "./../../Component/UI/Review/Review_card";
+import ReviewCard from "./../Component/UI/Review/Review_card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 
-import icon from "../../assests/icons.svg";
-import image1 from "../../assests/profile1.jpg";
-import image2 from "../../assests/profile2.jpg";
-import image3 from "../../assests/profile3.jpg";
+import icon from "../assests/icons.svg";
+import image1 from "../assests/profile1.jpg";
+import image2 from "../assests/profile2.jpg";
+import image3 from "../assests/profile3.jpg";
 
-import food1 from "../../assests/restaurant-details/food1.jpg";
-import food2 from "../../assests/restaurant-details/food2.jpg";
-import food3 from "../../assests/restaurant-details/food3.jpg";
-import food4 from "../../assests/restaurant-details/food4.jpg";
-import food5 from "../../assests/restaurant-details/food5.jpg";
-import food6 from "../../assests/restaurant-details/food6.jpg";
+import food1 from "../assests/restaurant-details/food1.jpg";
+import food2 from "../assests/restaurant-details/food2.jpg";
+import food3 from "../assests/restaurant-details/food3.jpg";
+import food4 from "../assests/restaurant-details/food4.jpg";
+import food5 from "../assests/restaurant-details/food5.jpg";
+import food6 from "../assests/restaurant-details/food6.jpg";
+
+import restaurant1 from "../assests/restaurant-details/restaurant-1.jpg";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -38,12 +40,17 @@ const setReviewStar = (stars) => {
 const restaurantDatails = (props) => {
 	return (
 		<div className="restaurant__wrapper">
+			<div className="restaurant__wrapper--profile-pic">
+				<img src={restaurant1} alt="profile" />
+				<div className="overlay"></div>
+			</div>
 			<h1 className="restaurant__wrapper--title primary__heading">
 				Cobb Lane Bed And Breakfast
 			</h1>
 			<p className="restaurant__wrapper--address">
 				Civil lines Satna (Madhya Pradesh)
 			</p>
+
 			<div className="restaurant__wrapper--rating">
 				{setReviewStar(5)}
 				<p> ( 246 ) Reviews</p>
@@ -52,22 +59,35 @@ const restaurantDatails = (props) => {
 			{/* Restaurants details  starting*/}
 
 			<div className="restaurant__wrapper--details">
-				<span className="restaurant__wrapper--details--container">
-					<p className="restaurant__wrapper--details--container-title">
-						Delivery
-					</p>
-					<p className="restaurant__wrapper--details--container-content">
-						Free
-					</p>
-				</span>
-				<span className="restaurant__wrapper--details--container">
-					<p className="restaurant__wrapper--details--container-title">
-						Opening time
-					</p>
-					<p className="restaurant__wrapper--details--container-content">
-						8:00 AM
+				<span className="restaurant__wrapper--details--description">
+					<h3 className="restaurant__wrapper--details--description-heading">
+						Description
+					</h3>
+					<p className="restaurant__wrapper--details--description-content">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book.
 					</p>
 				</span>
+				<div className="restaurant__wrapper--details--container--wrapper">
+					<span className="restaurant__wrapper--details--container">
+						<p className="restaurant__wrapper--details--container-title">
+							Delivery
+						</p>
+						<p className="restaurant__wrapper--details--container-content">
+							Free
+						</p>
+					</span>
+					<span className="restaurant__wrapper--details--container">
+						<p className="restaurant__wrapper--details--container-title">
+							Opening time
+						</p>
+						<p className="restaurant__wrapper--details--container-content">
+							8:00 AM
+						</p>
+					</span>
+				</div>
 			</div>
 
 			{/* Restaurants details  Ending*/}
@@ -105,36 +125,42 @@ const restaurantDatails = (props) => {
 						<img className="image image5" src={food1} alt=" Not found"></img>
 						<p className="SwiperSlide--title">Burger King</p>
 						<span className="SwiperSlide--price">$99</span>
+						<button>View All</button>
 					</SwiperSlide>
 
 					<SwiperSlide className="SwiperSlide">
 						<img className="image image5" src={food2} alt=" Not found"></img>
 						<p className="SwiperSlide--title">Hakka Noodles</p>
 						<span className="SwiperSlide--price">$25</span>
+						<button>View All</button>
 					</SwiperSlide>
 
 					<SwiperSlide className="SwiperSlide">
 						<img className="image image5" src={food3} alt=" Not found"></img>
 						<p className="SwiperSlide--title">Mix Veg</p>
 						<span className="SwiperSlide--price">$100</span>
+						<button>View All</button>
 					</SwiperSlide>
 
 					<SwiperSlide className="SwiperSlide">
 						<img className="image image5" src={food4} alt=" Not found"></img>
 						<p className="SwiperSlide--title">Khadai Paneer</p>
 						<span className="SwiperSlide--price">$250</span>
+						<button>View All</button>
 					</SwiperSlide>
 
 					<SwiperSlide className="SwiperSlide">
 						<img className="image image5" src={food5} alt=" Not found"></img>
 						<p className="SwiperSlide--title">Veg Biryani</p>
 						<span className="SwiperSlide--price">$150.23</span>
+						<button>View All</button>
 					</SwiperSlide>
 
 					<SwiperSlide className="SwiperSlide">
 						<img className="image image5" src={food6} alt=" Not found"></img>
 						<p className="SwiperSlide--title">Chicken Noodles</p>
 						<span className="SwiperSlide--price">$25</span>
+						<button>View All</button>
 					</SwiperSlide>
 				</Swiper>
 			</div>
